@@ -159,13 +159,16 @@ void Usage()
 	printf("   [2] : Convert SU2 mesh+solution files to the GMF format.\n");
 	printf("   [3] : Convert GMF mesh+solution files to the SU2 format. Use -header option to copy header information.\n");
 	printf("   [4] : Solution extraction.\n");
-	printf("   [5] : CAD operations.\n");
-	printf("   [6] : Clean mesh.\n");
+	printf("   [5] : CAD operations. (DISABLED)\n");
+	printf("   [6] : Clean mesh. (DISABLED)\n");
+	printf("   [7] : Tag boundary layer mesh (input SU2, output GMF).\n");
 	
 	printf("\n-- Examples:\n");
 	printf("    meshutils -O 1 -in restart_flow.su2 -sol restart_flow.dat \n");
 	printf("    meshutils -O 2 -in restart_flow.su2 -sol restart_flow.dat -out restart_flow\n");
 	printf("    meshutils -O 3 -in restart_flow.meshb -sol restart_flow.solb -header restart_flow.dat -out restart.new\n");
+	printf("    meshutils -O 7 -in mesh.su2 -sol distance.dat -out mesh\n");
+	
 	
 	printf("\n");
 }
