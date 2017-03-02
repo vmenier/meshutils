@@ -1,0 +1,43 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Autoconf/Automake
+*.Po
+*.dirstamp
+*.log
+*.status
+autom4te.cache
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+*.su2
+
+# Python files
+*.pyc
+*_py_wrap.c
+
+# Mac files
+*.DS_Store
+*.xcuserdatad
+
+## Compiled Makefiles
+#Makefile
+
+# Emacs temporary files
+*~
+
+./multif/build
+
+./example/*.su2
+./example/*.dat
+./example/config_CFD.cfg
+./example/*.csv
